@@ -8,25 +8,26 @@
   --door-color: #7d72aa;
   --brown: #976a40;
   --grey-color-of-logo: #393536;
+
+  /* Font Variables */
+  --main-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* HEADER*/
 
 header {
-  position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
   color: var(--grey-color-of-logo);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: var(--main-font);
   background-color: var(--door-color);
   z-index: 1;
-  width: 100vw;
-  top: 0;
-}
-
-header > h1 {
-  padding-top: 20px;
-  padding-left: 10px;
+  border: var(--grey-color-of-logo) 2px solid;
+  border-radius: 5px;
+  position: sticky;
 }
 
 .friends-logo {
@@ -36,12 +37,15 @@ header > h1 {
 
 body {
   background-color: var(--door-color);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: var(--main-font);
+  margin: 0px 200px 0px 200px;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 100px;
 }
 
 /* QUESTION CARD*/
@@ -49,18 +53,21 @@ main {
 .question-card {
   background-color: var(--mastard);
   border-radius: 10px;
-  width: 70%;
-  height: 300px;
+  border: var(--grey-color-of-logo) 2px solid;
   font-size: 1.5rem;
   color: var(--grey-color-of-logo);
+  position: relative;
   display: flex;
+  flex-direction: column;
   text-align: center;
-  flex-wrap: wrap;
   margin: auto;
+  width: 80%;
   margin-bottom: 30px;
   padding: 30px;
-  position: relative;
-  top: 130px;
+}
+
+.question-text {
+  text-align: center;
 }
 
 .bookmark-button {
@@ -76,6 +83,8 @@ main {
 
 .answer-button {
   background-color: var(--sage);
+  margin-top: 20px;
+  margin-bottom: 10px;
   height: 50px;
   width: 80px;
   border-radius: 8px;
@@ -86,18 +95,18 @@ main {
 
 .hashtags-list {
   display: flex;
-  flex-direction: row;
+  justify-content: start;
+  list-style-type: none;
 }
 
 .hashtags {
   color: var(--brick);
-  display: flex;
-  align-items: flex-end;
-  background-color: var(--brown);
+  background-color: var(--door-color);
   padding: 5px 10px;
   margin: 2px;
   border-radius: 5px;
   font-size: 0.8em;
+  display: flex;
 }
 
 /*FOOTER*/
@@ -111,12 +120,13 @@ footer {
   width: 100%;
   height: 85px;
   z-index: 1;
+  border: var(--grey-color-of-logo) 2px solid;
 }
 
 .footer-navbar {
   display: flex;
-  justify-content: center;
-  padding: 10px 20px 10px 20px;
+  justify-content: space-between;
+  padding: 10px 340px 10px 340px;
 }
 
 .nav__icon {
@@ -137,4 +147,15 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.how-you-doin-img {
+  width: 200px;
+  height: 100px;
+}
+
+.joye-image {
+  width: 70%;
+  top: 200px;
+  margin: auto;
 }
