@@ -86,13 +86,13 @@ main {
 
 .hashtags-list {
   display: flex;
-  justify-content: flex-start;
-  padding-top: 10px;
+  flex-direction: row;
 }
 
 .hashtags {
   color: var(--brick);
   display: flex;
+  align-items: flex-end;
   background-color: var(--brown);
   padding: 5px 10px;
   margin: 2px;
