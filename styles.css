@@ -149,13 +149,46 @@ ul {
   padding: 0;
 }
 
-.how-you-doin-img {
-  width: 200px;
-  height: 100px;
+/* PROFILE PAGE */
+
+.profile_pic {
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--grey-color-of-logo);
 }
 
-.joye-image {
-  width: 70%;
-  top: 200px;
-  margin: auto;
+.main__profile {
+  padding: 0 20px;
+  margin: 0 20px;
+  color: var(--grey-color-of-logo);
+}
+
+.profile__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  height: 30px;
+  width: 40px;
+}
+
+.name {
+  font-size: 36pt;
+  margin: 0 0 0 30px;
+}
+
+.about-me {
+  margin: 20px 0;
+}
+
+.about-title {
+  margin-bottom: 10px;
+}
+
+.darkmode-button {
+  height: 30px;
+  width: 40px;
 }
