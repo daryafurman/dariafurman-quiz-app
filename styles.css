@@ -94,6 +94,10 @@ main {
   color: var(--beige);
 }
 
+.hidden {
+  display: none;
+}
+
 .hashtags-list {
   display: flex;
   justify-content: start;
