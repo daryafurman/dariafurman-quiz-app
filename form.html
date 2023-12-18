@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="bookmarks.html" />
-    <title>Friends Quiz</title>
+    <link rel="stylesheet" href="profile.html" />
+    <title>Friends Quiz - Add your question</title>
   </head>
   <body>
     <header>
       <img class="friends-logo" src="img/logo.png" alt="friends logo" />
       <h1>Quiz App</h1>
     </header>
-    <main></main>
-
+    <main>
+      <form class="question-form">
+        <label for="question">Your question:</label>
+        <textarea
+          name="question"
+          id="question-area"
+          cols="70"
+          rows="10"
+        ></textarea>
+        <label for="answer">Your answer:</label>
+        <textarea
+          name="answer"
+          id="answear-area"
+          cols="70"
+          rows="10"
+        ></textarea>
+        <label for="tag">Tag:</label>
+        <input type="text" id="tag" name="tag"/>
+        <input type="submit" value="Submit" class="submit-form"></input>
+      </form>
+    </main>
     <footer>
       <nav>
         <ul class="footer-navbar">
@@ -22,12 +42,12 @@
               ><img class="nav__icon" src="img/home.png" alt="home"
             /></a>
           </li>
-          <li class="nav__icon active">
+          <li class="nav__icon">
             <a href="./bookmarks.html" class="footer-link"
               ><img class="nav__icon" src="img/red-bookmark.png" alt="bookmark"
             /></a>
           </li>
-          <li class="nav__icon">
+          <li class="nav__icon active">
             <a href="./form.html" class="footer-link"
               ><img
                 class="nav__icon"
