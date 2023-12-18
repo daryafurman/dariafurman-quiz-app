@@ -221,3 +221,13 @@ ul {
   color: var(--beige);
   margin-top: 20px;
 }
+
+.text-area {
+  background-color: var(--mastard);
+}
+
+.question-form label,
+.question-form textarea,
+.question-form input {
+  margin-bottom: 15px;
+}

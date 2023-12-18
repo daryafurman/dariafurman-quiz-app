@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="bookmarks.html" />
     <link rel="stylesheet" href="profile.html" />
     <script src="index.js"></script>
@@ -17,11 +18,11 @@
     <main>
       <form class="question-form">
         <label for="question">Your question:</label>
-        <textarea name="question" id="question-area" cols="70" rows="10"></textarea>
+        <textarea class="text-area" name="question" id="question-area" cols="70" rows="10"  maxlength="150"></textarea>
         <label for="answer">Your answer:</label>
-        <textarea name="answer" id="answer-area" cols="70" rows="10"></textarea>
+        <textarea class="text-area" name="answer" id="answer" cols="70" rows="10" maxlength="150"></textarea>
         <label for="tag">Tag:</label>
-        <input type="text" id="tag" name="tag" />
+        <input class="text-area" type="text" id="tag" name="tag" />
         <input type="submit" value="Submit" class="submit-form"></input>
       </form>
     

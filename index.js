@@ -1,6 +1,7 @@
 console.clear();
-//Bookmark button
+
 document.addEventListener("DOMContentLoaded", function () {
+  // Bookmark button
   const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
   let isBookmarked = false;
 
@@ -12,11 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
       bookmarkButton.src = "img/empty-bookmark.webp";
     }
   });
-});
 
-//answer button
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Answer button
   const questionCards = document.querySelectorAll('[data-js="question-card"]');
 
   questionCards.forEach(function (card) {
@@ -30,19 +28,35 @@ document.addEventListener("DOMContentLoaded", function () {
       answerButton.textContent = isAnswerVisible ? "Hide Answer" : "Answer";
     });
   });
-});
 
-// Form
-document
-  .querySelector(".question-form")
-  .addEventListener("submit", function (event) {
+  // Form
+  const questionField = document.getElementById("question-area");
+  const answerField = document.getElementById("answer");
+  const tagField = document.getElementById("tag");
+  const submitButton = document.querySelector(".submit-form");
+
+  function updateCounter(field, counter) {
+    const maxChars = parseInt(field.getAttribute("maxlength"));
+    const remainingChars = maxChars - field.value.length;
+    counter.textContent = `Characters remaining: ${remainingChars}`;
+  }
+
+  questionField.addEventListener("input", function () {
+    updateCounter(questionField, questionCounter);
+  });
+
+  answerField.addEventListener("input", function () {
+    updateCounter(answerField, answerCounter);
+  });
+
+  submitButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-    const question = document.getElementById("question-area").value;
-    const answer = document.getElementById("answer").value;
-    const tags = document.getElementById("tag").value;
+    const question = questionField.value;
+    const answer = answerField.value;
+    const tags = tagField.value;
 
-    // Generate DOM elements for the card
+    // Create card elements
     const card = document.createElement("section");
     card.classList.add("question-card");
 
@@ -72,8 +86,8 @@ document
     li.textContent = tags;
 
     // Append the card to the page
-    const questionCard = document.querySelector('[data-js="question-card"]');
-    questionCard.insertAdjacentElement("beforebegin", card);
+    const mainContainer = document.querySelector("main");
+    mainContainer.appendChild(card);
     card.appendChild(article);
     article.appendChild(questionText);
     article.appendChild(answerButton);
@@ -82,3 +96,4 @@ document
     hashtagsList.appendChild(ul);
     ul.appendChild(li);
   });
+});
