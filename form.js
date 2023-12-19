@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const charCountQuestion = document.getElementById("charCountQuestion");
   const charCountAnswer = document.getElementById("charCountAnswer");
 
-  // Event listener for the form submit
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -14,28 +13,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const answer = answerTextarea.value.trim();
     const tag = document.getElementById("tag").value.trim();
 
-    // Validate data (you can add more validation as needed)
+    // data validation
     if (!question || !answer || !tag) {
       alert("Please fill out all fields.");
       return;
     }
 
-    // Create a new card element
+    // Creating a new card element
     const card = createCardElement(question, answer, tag);
 
-    // Append the new card below the form
     form.insertAdjacentElement("afterend", card);
 
-    // Reset form fields
     form.reset();
   });
 
-  // Event listener for input changes in the question textarea
   questionTextarea.addEventListener("input", function () {
     updateCharCount(questionTextarea, charCountQuestion);
   });
 
-  // Event listener for input changes in the answer textarea
   answerTextarea.addEventListener("input", function () {
     updateCharCount(answerTextarea, charCountAnswer);
   });
