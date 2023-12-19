@@ -17,3 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     answerButton.innerText = buttonText === "Answer" ? "Hide Answer" : "Answer";
   });
 });
+
+//pivot button animation
+
+function rotateButton() {
+  var answerButton = document.querySelector(".answer-button-pivot");
+  answerButton.classList.toggle("rotated");
+}
