@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="bookmarks.html" />
+    <link rel="stylesheet" href="profile.html" />
+    <script src="form.js"></script>
+    <script src="index.js"></script>
+    <title>Friends Quiz - Add your question</title>
+  </head>
+  <body>
+    <header>
+      <img class="friends-logo" src="img/logo.png" alt="friends logo" />
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <form id="quizForm">
+        <label for="question">Your question:</label>
+        <textarea
+          class="text-area"
+          id="question"
+          name="question"
+          maxlength="150"
+          cols="70"
+          rows="10"
+          required
+        ></textarea>
+        <div id="charCountQuestion">
+          <p>Characters left: 150</p>
+        </div>
+        <label for="answer">Your answer:</label>
+        <textarea
+          class="text-area"
+          id="answer"
+          name="answer"
+          maxlength="150"
+          cols="70"
+          rows="10"
+          required
+        ></textarea>
+        <div id="charCountAnswer">
+          <p>Characters left: 150</p>
+        </div>
+        <label for="tag">Tag:</label>
+        <input class="text-area" type="text" id="tag" name="tag" required />
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <ul class="footer-navbar">
+          <li>
+            <a href="./index.html" class="footer-link"
+              ><img class="nav__icon" src="img/home.png" alt="home"
+            /></a>
+          </li>
+          <li class="nav__icon">
+            <a href="./bookmarks.html" class="footer-link"
+              ><img class="nav__icon" src="img/red-bookmark.png" alt="bookmark"
+            /></a>
+          </li>
+          <li class="nav__icon active">
+            <a href="./form.html" class="footer-link"
+              ><img
+                class="nav__icon"
+                src="img/add-new-form.webp"
+                alt="bookmark"
+            /></a>
+          </li>
+          <li>
+            <a href="./profile.html" class="footer-link"
+              ><img class="nav__icon" src="img/profile.png" alt="profile"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="bookmarks.html" />
+    <link rel="stylesheet" href="profile.html">
+    <link rel="stylesheet" href="form.html">
+    <script  src="index.js"></script>
     <title>Friends Quiz</title>
   </head>
   <body>
     <header>
       <img
         class="friends-logo"
-        src="https://assets.stickpng.com/images/613f5fed16381700041030d6.png"
+        src="img/logo.png"
         alt="friends logo"
       />
       <h1>Quiz App</h1>
@@ -19,19 +22,22 @@
     <main>
       <!-- QUESTION #1 -->
 
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
-            class="bookmark-button"
+            id="bookmark-image"
+            class="bookmark-button"  
+            data-js="bookmark-button"
             href="#"
           />
           <h3 class="question-text">
             1. Question: What is the name of the coffee shop where the Friends
             gang frequently hangs out?
-          </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          </h3>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Central Perk</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -42,19 +48,21 @@
 
       <!-- QUESTION #2 -->
 
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn-icons-png.flaticon.com/512 /9969/9969832.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="/bookmarks.html"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">
             2. Question: What is the surname of Ross and Monica, two of the main
             characters in Friends?
           </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Geller</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -65,19 +73,21 @@
 
       <!-- QUESTION #3 -->
 
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/9969/9969832.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">
             3. Question: Which character famously yelled "We were on a break!"
             during a relationship dispute?
           </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Ross Geller</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -87,19 +97,21 @@
       </section>
 
       <!-- QUESTION #4 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">
             4. Question: What is the name of Phoebe's quirky, often nonsensical
             song about a smelly cat?
           </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: "Smelly Cat"</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -109,16 +121,18 @@
       </section>
 
       <!-- QUESTION #5 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
-          <h3 class="question-text">5. Question: What does Joey never share?</h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <h3 class="question-text">5. Question: What word does Ross repeatedly shout while trying to move a couch up the stairs?</h3 class="question-text">
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Pivot!</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -128,16 +142,18 @@
       </section>
 
       <!-- QUESTION #6 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/9969/9969832.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">6. Question: What is Chandler's last name?</h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Bing</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -147,18 +163,20 @@
       </section>
 
       <!-- QUESTION #7 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">
             7. Question: Which character is a paleontologist by profession?
           </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Ross Geller</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -168,16 +186,18 @@
       </section>
 
       <!-- QUESTION #8 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">8. Question: What is the name of Rachel's daughter?</h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Emma</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -187,19 +207,21 @@
       </section>
 
       <!-- QUESTION #9 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">
             9. Question: Which character famously says "How you doin'?" as a
             pick-up line?
           </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Joey Tribbian</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -209,18 +231,20 @@
       </section>
 
       <!-- QUESTION #10 -->
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <article class="question">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-bookmark-2456669-2036123.png"
+            src="img/empty-bookmark.webp"
             alt="bookmark"
             class="bookmark-button"
             href="#"
+            data-js="bookmark-button"
           />
           <h3 class="question-text">
             10. Question: What is the profession of Chandler's wife, Monica?
           </h3 class="question-text">
-          <button class="answer-button">Answer</button>
+          <button class="answer-button" data-js="answer-button">Answer</button>
+          <p class="answer hidden">Answer: Chef</p>
         </article>
         <div class="hashtags-list">
           <ul>
@@ -237,7 +261,7 @@
             <a href="./index.html" class="footer-link"
               ><img
                 class="nav__icon"
-                src="https://cdn-icons-png.flaticon.com/512/4481/4481380.png"
+                src="img/home.png"
                 alt="home"
             /></a>
           </li>
@@ -245,16 +269,23 @@
             <a href="./bookmarks.html" class="footer-link"
               ><img
                 class="nav__icon"
-                src="https://cdn-icons-png.flaticon.com/512/9969/9969832.png"
+                src="img/red-bookmark.png"
                 alt="bookmark"
             /></a>
           </li>
-
+          <li class="nav__icon">
+            <a href="./form.html" class="footer-link"
+              ><img
+                class="nav__icon"
+                src="img/add-new-form.webp"
+                alt="bookmark"
+            /></a>
+          </li>
           <li>
             <a href="./profile.html" class="footer-link"
               ><img
                 class="nav__icon"
-                src="https://cdn-icons-png.flaticon.com/512/5987/5987424.png"
+                src="img/profile.png"
                 alt="profile"
             /></a>
           </li>

@@ -25,8 +25,6 @@ header {
   font-family: var(--main-font);
   background-color: var(--door-color);
   z-index: 1;
-  border: var(--grey-color-of-logo) 2px solid;
-  border-radius: 5px;
   position: sticky;
 }
 
@@ -63,6 +61,7 @@ main {
   margin: auto;
   width: 80%;
   margin-bottom: 30px;
+  margin-top: 15px;
   padding: 30px;
 }
 
@@ -91,6 +90,10 @@ main {
   border: 2px solid var(--beige);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--beige);
+}
+
+.hidden {
+  display: none;
 }
 
 .hashtags-list {
@@ -160,7 +163,22 @@ ul {
 .main__profile {
   padding: 0 20px;
   margin: 0 20px;
+  background-color: var(--mastard);
   color: var(--grey-color-of-logo);
+  border: var(--grey-color-of-logo) 2px solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding: 30px;
+}
+
+.counter__buttons {
+  display: flex;
+  align-items: end;
 }
 
 .profile__top {
@@ -191,4 +209,45 @@ ul {
 .darkmode-button {
   height: 30px;
   width: 40px;
+  display: flex;
+}
+
+.bookmarked {
+  filter: invert(1);
+}
+
+.text-area {
+  background-color: var(--mastard);
+}
+
+div {
+  text-align: right;
+}
+
+.submit-button {
+  background-color: var(--sage);
+  height: 50px;
+  width: 80px;
+  border-radius: 8px;
+  border: 2px solid var(--beige);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--beige);
+  margin: auto;
+  margin-top: 20px;
+}
+
+#quizForm {
+  border-radius: 10px;
+  border: var(--grey-color-of-logo) 2px solid;
+  font-size: 1.5rem;
+  color: var(--grey-color-of-logo);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding: 30px;
 }
