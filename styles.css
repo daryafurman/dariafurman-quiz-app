@@ -163,7 +163,22 @@ ul {
 .main__profile {
   padding: 0 20px;
   margin: 0 20px;
+  background-color: var(--mastard);
   color: var(--grey-color-of-logo);
+  border: var(--grey-color-of-logo) 2px solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding: 30px;
+}
+
+.counter__buttons {
+  display: flex;
+  align-items: end;
 }
 
 .profile__top {
@@ -194,6 +209,7 @@ ul {
 .darkmode-button {
   height: 30px;
   width: 40px;
+  display: flex;
 }
 
 .bookmarked {
