@@ -251,3 +251,20 @@ div {
   margin-top: 15px;
   padding: 30px;
 }
+
+.answer-button-pivot {
+  transition: transform 0.5s;
+  background-color: var(--sage);
+  height: 50px;
+  width: 80px;
+  border-radius: 8px;
+  border: 2px solid var(--beige);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--beige);
+  margin: auto;
+  margin-top: 20px;
+}
+
+.answer-button-pivot.rotated {
+  transform: rotate(90deg);
+}
