@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="index.html" />
     <link rel="stylesheet" href="bookmarks.html" />
     <link rel="stylesheet" href="profile.html" />
+    <script src="form.js"></script>
     <script src="index.js"></script>
     <title>Friends Quiz - Add your question</title>
   </head>
@@ -16,28 +17,38 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <form class="question-form">
+      <form id="quizForm">
         <label for="question">Your question:</label>
-        <textarea class="text-area" name="question" id="question-area" cols="70" rows="10"  maxlength="150"></textarea>
-        <label for="answer">Your answer:</label>
-        <textarea class="text-area" name="answer" id="answer" cols="70" rows="10" maxlength="150"></textarea>
-        <label for="tag">Tag:</label>
-        <input class="text-area" type="text" id="tag" name="tag" />
-        <input type="submit" value="Submit" class="submit-form"></input>
-      </form>
-    
-      <section class="question-card" data-js="question-card">
-        <article class="question">
-          <h3 class="question-text"></h3>
-          <button class="answer-button" data-js="answer-button">Answer</button>
-          <p class="answer hidden"></p>
-        </article>
-        <div class="hashtags-list">
-          <ul>
-            <li class="hashtags"></li>
-          </ul>
+        <textarea
+          class="text-area"
+          id="question"
+          name="question"
+          maxlength="150"
+          cols="70"
+          rows="10"
+          required
+        ></textarea>
+        <div id="charCountQuestion">
+          <p>Characters left: 150</p>
         </div>
-      </section>
+        <label for="answer">Your answer:</label>
+        <textarea
+          class="text-area"
+          id="answer"
+          name="answer"
+          maxlength="150"
+          cols="70"
+          rows="10"
+          required
+        ></textarea>
+        <div id="charCountAnswer">
+          <p>Characters left: 150</p>
+        </div>
+        <label for="tag">Tag:</label>
+        <input class="text-area" type="text" id="tag" name="tag" required />
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
     </main>
     <footer>
       <nav>
