@@ -234,7 +234,6 @@ div {
   color: var(--beige);
   margin: auto;
   margin-top: 20px;
-  transition: all 0.2s linear;
 }
 
 #quizForm {
